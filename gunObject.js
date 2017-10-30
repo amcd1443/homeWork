@@ -1,3 +1,11 @@
+// Learning about Objects
+//		Homework
+//1. 
+//
+//2. 
+//3. 
+//4. 
+
 var readline = require("readline");
 var gun = {};
 gun.name = "uzi"; 
@@ -14,19 +22,17 @@ gun.reload = function() {
 // 3. 
 
 gun.shoot = function(pulls) {
-	// this.bulletsInClip = this.bulletsInClip - pulls;	//my friend commented out this code 
-…
+	// this.bulletsInClip = this.bulletsInClip - pulls	//my friend commented out this code 
 	for (i = 0; i < pulls; i++) {
 		if (this.bulletsInClip > 0) {				
 			console.log("bang");					
-			this.bulletsInClip -= 1;			// And made this
+			this.bulletsInClip -= 1;					// And made this
 		} else {									
 			console.log("click");					
 		}
 	};
 
 	if (this.bulletsInClip === 0) {
-…
 		gun.reload();							
 	}
 	
@@ -46,3 +52,4 @@ input.on('line', function(line) {
 });
 
 console.log("hi austin, how many shots do you want me to take?");
+
